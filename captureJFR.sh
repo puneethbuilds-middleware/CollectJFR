@@ -1,9 +1,10 @@
 #!/usr/bin/env bash
-# Capture a separate, timed JFR recording for each supplied JVM PID.
-# Supports Red Hat Linux and macOS with Bash 3.2 or newer.
-# Requires a JDK with JFR support (Oracle JDK 8 or a suitable OpenJDK build).
+# Capture separate, timed JFR recordings in parallel for the supplied JVM PIDs.
+# Designed for Red Hat Linux, Oracle Linux, Ubuntu, and macOS with Bash 3.2+.
+# Requires a JDK with JFR support and the jcmd utility.
+# Automatically unlocks JFR on Oracle JDK 8u40+ when required.
 # Run on the JVM host as the operating-system user that owns the JVMs.
-# Use jcmd from a JDK matching the target JVM version.
+# Use jcmd from the JDK running the target JVMs.
 set -uo pipefail
 
 usage() {
