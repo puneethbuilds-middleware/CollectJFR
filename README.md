@@ -1,5 +1,9 @@
 # CollectJFR
 
+Blog link:
+https://blogbypuneeth.medium.com/capture-jfr-for-multiple-weblogic-jvms-and-dynamically-unlock-jfr-on-oracle-jdk-8u40-8401123e311b?postPublishedType=initial
+
+
 # Capture JFR for Multiple WebLogic JVMs
 
 `capture_jfr.sh` starts JFR recordings in parallel for the supplied PIDs and saves a separate `.jfr` file and log for each JVM.
